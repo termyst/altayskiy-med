@@ -1,0 +1,237 @@
+body {
+	margin: 0;
+
+	background-color: #fff;
+
+	font-family: 'Caveat', cursive;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #442f1a;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container {
+	width: 100%;
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+/* Intro */
+.intro {
+	background: url(images/intro.jpeg) no-repeat center;
+	background-size: cover;
+	padding-bottom: 250px;
+	height: 100vh;
+}
+
+
+
+/* Header */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 153px;
+}
+
+.logo {
+	display: block;
+	width: 150px;
+}
+
+.nav {
+	display: flex;
+	gap: 30px;
+}
+
+.nav__link {
+	font-size: 50px;
+	color: #442f1a;
+	text-decoration: none;
+}
+
+.nav__link:hover {
+	text-decoration: underline;
+}
+
+.burger {
+	padding: 0;
+	background: none;
+	border: 0;
+
+	display: none;
+}
+
+/* Intro-content */
+.intro__title {
+	font-size: 70px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.intro__subtitle {
+	font-size: 60px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.intro__text {
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+
+.button {
+	padding: 10px 20px;
+	color: #ffffff;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #f98e05;
+    box-shadow: 0px 3px 5px 0px rgba(120,65,20,0.5);
+	text-decoration: none;
+	transition: padding .2s linear;
+}
+
+.button:hover {
+	padding: 15px 25px;
+}
+
+/* Catalog */
+
+.catalog {
+	margin-top: 30px;
+}
+
+.catalog__title {
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.catalog__carta {
+	width: 100%;
+	background: #fff;
+	border: 3px solid #442f1a;
+	border-radius: 40px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.carta__title {
+	margin-top: 20px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.carta__text {
+	padding: 0 20px;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.carta__img {
+	display: block;
+	width: 100%;
+	border-radius: 0 0 37px 37px;
+}
+
+.button__carta {
+	padding: 10px 20px;
+	color: #ffffff;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #f98e05;
+    box-shadow: 0px 3px 5px 0px rgba(120,65,20,0.5);
+	text-decoration: none;
+	transition: padding .2s linear;
+
+	position: absolute;
+	left: 100px;
+	bottom: 100px;
+}
+
+.button__carta:hover {
+	padding: 15px 25px;
+}
+
+@media(max-width: 575px) {
+
+	.catalog__carta {
+		margin-bottom: 120px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	.nav__link {
+		display: none;
+	}
+
+	.intro__title {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.intro__subtitle {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.intro__text {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.catalog__title {
+		font-size: 40px;
+	}
+
+	.carta__title {
+		font-size: 35px;
+	}
+
+	.carta__text {
+		font-size: 18px;
+	}
+
+	.button__carta {
+		left: 20px;
+		bottom: -80px;
+	}
+
+	.burger {
+		display: block;
+	}
+}
+
+
+
+
