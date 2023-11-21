@@ -222,6 +222,17 @@ ul, ol {
 }
 
 
+@media(max-width: 767px) {
+	.nav__link {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+	}
+}
+
+
 
 @media(max-width: 575px) {
 
