@@ -272,6 +272,14 @@ ul, ol {
 	.burger {
 		display: block;
 	}
+
+	.footer__inner {
+		flex-direction: column;
+	}
+
+	.footer__tel {
+		margin: 20px;
+	}
 }
 
 
