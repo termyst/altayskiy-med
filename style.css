@@ -326,6 +326,7 @@ ul, ol {
 
 	.button__carta {
 		padding: 5px 10px;
+		font-size: 20px;
 		left: 20px;
 		bottom: -80px;
 	}
