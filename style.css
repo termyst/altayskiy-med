@@ -250,10 +250,6 @@ ul, ol {
 		width: 100px;
 	}
 
-	.nav__link {
-		display: none;
-	}
-
 	.intro__title {
 		font-size: 35px;
 		text-align: center;
@@ -292,6 +288,63 @@ ul, ol {
 
 	.footer__tel {
 		margin-top: 20px;
+	}
+}
+
+
+@media(max-width: 280px) {
+	.catalog__carta {
+		margin-bottom: 120px;
+	}
+
+	.logo {
+		width: 80px;
+	}
+
+	.intro__title {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.intro__subtitle {
+		font-size: 22px;
+		text-align: center;
+	}
+
+	.catalog__title {
+		font-size: 25px;
+	}
+
+	.carta__title {
+		font-size: 22px;
+	}
+
+	.carta__text {
+		font-size: 18px;
+		padding: 0 10px;
+	}
+
+	.button__carta {
+		padding: 5px 10px;
+		left: 20px;
+		bottom: -80px;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.footer__inner {
+		flex-direction: column;
+	}
+
+	.footer__nav {
+		gap: 18px;
+	}
+
+	.footer__tel {
+		margin-top: 20px;
+		font-size: 20px;
 	}
 }
 
