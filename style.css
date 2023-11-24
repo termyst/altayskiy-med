@@ -47,7 +47,6 @@ ul, ol {
 .intro {
 	background: url(images/intro.jpeg) no-repeat center;
 	background-size: cover;
-	padding-bottom: 250px;
 }
 
 
@@ -227,7 +226,8 @@ ul, ol {
 }
 
 
-@media(max-width: 767px) {
+
+@media(max-width: 1024px) {
 	.nav__link {
 		display: none;
 	}
@@ -235,7 +235,10 @@ ul, ol {
 	.burger {
 		display: block;
 	}
+}
 
+
+@media(max-width: 767px) {
 	.intro__text {
 		font-size: 25px;
 		text-align: center;
