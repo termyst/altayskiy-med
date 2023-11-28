@@ -100,6 +100,9 @@ ul, ol {
 }
 
 .burger {
+    width: 30px;
+    height: 23px;
+    position: relative;
 	padding: 0;
 	background: none;
 	border: 0;
@@ -125,8 +128,30 @@ ul, ol {
 }
 
 .burger__line:nth-child(1) {
-    margin-left: auto;
-    width: 20px;
+    margin-left: 10px;
+    width: 30px;
+}
+
+.burger.active .burger__line:nth-child(1),
+.burger.active .burger__line:nth-child(3) {
+    display: none;
+}
+
+.burger.active .burger__line:nth-child(2),
+.burger.active .burger__line:nth-child(4) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform-origin: center;
+}
+
+.burger.active .burger__line:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.burger.active .burger__line:nth-child(4) {
+    transform: rotate(-45deg);
 }
 
 
@@ -397,7 +422,3 @@ ul, ol {
 		margin-top: 20px;
 	}
 }
-
-
-
-
