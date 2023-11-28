@@ -100,16 +100,16 @@ ul, ol {
 }
 
 .burger {
-    width: 30px;
-    height: 23px;
-    position: relative;
+	width: 30px;
+	height: 23px;
+	position: relative;
 	padding: 0;
 	background: none;
 	border: 0;
-    
-    font-size: 0;
-    color: transparent;
-
+	
+	font-size: 0;
+	color: transparent;
+	
 	display: none;
 }
 
