@@ -41,9 +41,10 @@ ul, ol {
 }
 
 .page {
-	width: 100%;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    min-height: 770px;
+    min-height: 1000px;
 }
 
 
@@ -84,13 +85,19 @@ ul, ol {
 	width: 150px;
 }
 
+/* Nav */
+
 .nav {
 	display: flex;
+    height: 100%;
+    font-size: 50px;
 	gap: 30px;
 }
 
 .nav__link {
-	font-size: 50px;
+    display: flex;
+    align-items: center;
+    
 	color: #442f1a;
 	text-decoration: none;
 }
@@ -99,9 +106,10 @@ ul, ol {
 	text-decoration: underline;
 }
 
+/* Burger */
 .burger {
-    width: 30px;
-    height: 23px;
+    width: 40px;
+    height: 45px;
     position: relative;
 	padding: 0;
 	background: none;
@@ -125,16 +133,24 @@ ul, ol {
     margin: 5px 0;
     
     background-color: #442f1a;
+    
+    transition: transform .2s ease-out;
 }
 
 .burger__line:nth-child(1) {
-    margin-left: 10px;
+    margin-left: auto;
     width: 30px;
 }
 
 .burger.active .burger__line:nth-child(1),
 .burger.active .burger__line:nth-child(3) {
-    display: none;
+    transform-origin: right;
+    transition: width .2s ease-out;
+}
+
+.burger.active .burger__line:nth-child(1),
+.burger.active .burger__line:nth-child(3) {
+    width: 0;
 }
 
 .burger.active .burger__line:nth-child(2),
@@ -310,11 +326,10 @@ ul, ol {
 	}
     
     .nav {
-        display: block;
         width: 100%;
-        height: 100vh;
+        height: auto;
+        min-height: calc(100vh - 50px);
         flex-direction: column;
-        padding-top: 9px;
         
         background: url(images/nav-bg.jpeg) no-repeat center;
         background-size: cover;
@@ -326,7 +341,7 @@ ul, ol {
         right: 0;
         z-index: 1;
 
-       display: none;
+        display: none;
     }
 
     .nav.show {
@@ -334,11 +349,9 @@ ul, ol {
     }
     
     .nav__catalog {
-        display: block;
         width: 100%;
         height: 100vh;
         flex-direction: column;
-        padding-top: 9px;
         
         background: #fff;
         background-size: cover;
@@ -378,6 +391,7 @@ ul, ol {
 		text-align: center;
 		background-color: rgba(255, 255, 255, .0);
 		box-shadow: none;
+        padding: 0;
 	}
 }
 
@@ -424,4 +438,3 @@ ul, ol {
 		margin-top: 20px;
 	}
 }
-
